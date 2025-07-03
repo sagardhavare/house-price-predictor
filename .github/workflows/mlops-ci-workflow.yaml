@@ -45,6 +45,8 @@ jobs:
           --backend-store-uri sqlite:///mlflow.db \
           --default-artifact-root /tmp/mlruns \
           
+      - name: Wait for MLflow server to be ready
+        run: sleep 10     
 
       - name: Run Model Training
         run: |
