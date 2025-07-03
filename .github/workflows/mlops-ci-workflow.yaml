@@ -44,7 +44,7 @@ jobs:
           mlflow server --host 0.0.0.0 \
           --backend-store-uri sqlite:///mlflow.db \
           --default-artifact-root /tmp/mlruns \
-          --mlflow-tracking-uri http://localhost:5555
+          
 
       - name: Run Model Training
         run: |
